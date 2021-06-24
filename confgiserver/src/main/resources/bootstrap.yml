@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active:
+    - git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/b33ka/config-repo.git
+          searchPaths: payment-service
+          username: b33ka
+          password: Iphone4gsf
+
+server:
+  port: 8071
+  
+encrypt:
+  key: secretkey
+
+
+#Enable all Spring Boot Actuator endpoints.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
