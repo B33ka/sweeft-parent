@@ -1,11 +1,11 @@
-package me.sweeft.eurekaserver;
+/*
+package me.sweeft.paymentservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-/*
 @SpringBootTest
-class EurekaserverApplicationTests {
+class FilemanagerServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

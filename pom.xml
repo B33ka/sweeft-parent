@@ -19,15 +19,16 @@
     </parent>
 
     <properties>
-        <docker.image.prefix>b33ka</docker.image.prefix>
+       <!-- <docker.image.prefix>b33ka</docker.image.prefix>-->
     </properties>
 
     <modules>
         <module>confgiserver</module>
         <module>payment-service</module>
         <module>eurekaserver</module>
+        <module>filemanager-service</module>
     </modules>
-    <build>
+   <!-- <build>
         <plugins>
             <plugin>
                 <groupId>com.spotify</groupId>
@@ -38,5 +39,5 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 </project>

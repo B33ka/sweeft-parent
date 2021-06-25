@@ -9,13 +9,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>me.sweeft</groupId>
-    <artifactId>payment-service</artifactId>
+    <artifactId>filemanager-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>payment-service</name>
-    <description>Payment service for Sweeft</description>
+    <name>filemanager-service</name>
+    <description>Filemanager service for Sweeft</description>
     <properties>
         <java.version>11</java.version>
-        <!--<docker.image.prefix>b33ka</docker.image.prefix>-->
+        <docker.image.prefix>b33ka</docker.image.prefix>
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
     </properties>
 
@@ -46,15 +46,6 @@
                     <artifactId>ribbon-eureka</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
         <dependency>
@@ -112,7 +103,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <!-- This plugin is used to create a docker image and publish the image to docker hub-->
-           <!-- <plugin>
+            <!--<plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.13</version>
