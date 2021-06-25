@@ -25,6 +25,7 @@
     <modules>
         <module>confgiserver</module>
         <module>payment-service</module>
+        <module>eurekaserver</module>
     </modules>
     <build>
         <plugins>

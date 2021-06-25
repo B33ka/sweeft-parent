@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/b33ka/config-repo.git
-          searchPaths: payment-service
+          searchPaths: payment-service, eureka-server
           username: b33ka
           password: Iphone4gsf
 
